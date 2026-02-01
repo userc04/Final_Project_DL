@@ -8,13 +8,14 @@ Projet de deep learning pour la détection non supervisée d'anomalies acoustiqu
 - Dataset ESC-50 : Classification de sons environnementaux (50 catégories) : par souci de taille pour la démo, nous avons choisi ce petit dataset afin de reproduire des sons environnants comme le principe du dataset CHiME utilisé dans l'article de référence.
 
 ## Structure du projet
-projet/
-├── Accoustic Detection.ipynb          # Notebook d'exploration + demo à ouvrir sous Google Collab 
-├── models/             # Implémentations DAE-BLSTM et Transformer
-    └── blstm_dae.py
-    └── transormer.py
-├── requirements.txt    # Dépendances
-└── README.md
+Final_Projet_DL/
+
+├── Acoustic_Detection.ipynb          # Notebook d'exploration + demo (Google Colab)
+├── models/                           # Implémentations des modèles
+│   ├── blstm_dae.py                  # DAE-BLSTM selon l'article
+│   └── transformer.py                # Extension avec Transformers
+├── requirements.txt                  # Dépendances
+└── README.md                         # Documentation
 
 Lien vers le notebook collab : 
 https://colab.research.google.com/drive/1QClpG1ewHceEr-CYJcZgmB8-EVMJPDMz?usp=sharing
