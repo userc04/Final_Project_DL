@@ -7,15 +7,19 @@ Projet de deep learning pour la détection non supervisée d'anomalies acoustiqu
 - Architecture DAE-BLSTM : Implémentation de l'article de recherche "A NOVEL APPROACH FOR AUTOMATIC ACOUSTIC NOVELTY DETECTION USING A DENOISING AUTOENCODER WITH BIDIRECTIONAL LSTM NEURAL NETWORKS " , 2015
 - Dataset ESC-50 : Classification de sons environnementaux (50 catégories) : par souci de taille pour la démo, nous avons choisi ce petit dataset afin de reproduire des sons environnants comme le principe du dataset CHiME utilisé dans l'article de référence.
 
+## Remarques IMPORTANTES 
+Nous avons testé l'architecture de l'article BLSTM-DAE sur le petit jeu de données ESC-50 mais également sur un jeu plus complexe, MIMII sur la détéction de défaut de machines industrielles. Ce jeu de données étant trop volumineux, il nous est impossible de le fournir dans le repo. J'ai donc compressé et simplement utilisé de mon coté ce jeu de données. La partie concernant ce jeu est donc NON EXECUTABLE. 
+Nous avons également testé en fin de projet un Transformer, non présenté dans la vidéo car cela relève de l'exploration et l'étude n'a pas été menée jusqu'au bout par souci de temps. 
+
 ## Structure du projet
 Final_Projet_DL/
 
-├── Acoustic_Detection.ipynb          # Notebook d'exploration + demo (Google Colab)
-├── models/                           # Implémentations des modèles
-│   ├── blstm_dae.py                  # DAE-BLSTM selon l'article
-│   └── transformer.py                # Extension avec Transformers
-├── requirements.txt                  # Dépendances
-└── README.md                         # Documentation
+-  Acoustic_Detection.ipynb          # Notebook d'exploration + demo (Google Colab)
+-  models/                           # Implémentations des modèles
+- blstm_dae.py                  # DAE-BLSTM selon l'article
+- transformer.py                # Extension avec Transformers
+- requirements.txt                  # Dépendances
+- README.md                         # Documentation
 
 Lien vers le notebook collab : 
 https://colab.research.google.com/drive/1QClpG1ewHceEr-CYJcZgmB8-EVMJPDMz?usp=sharing
